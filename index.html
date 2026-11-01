@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>烟火留声｜篆新摊主生活实录数字档案</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="single-page">
+  <header class="standalone-header">
+    <a class="brand" href="#cover" data-route-link="cover">
+      <span class="brand-mark" aria-hidden="true">留声</span>
+      <span class="brand-word">烟火留声</span>
+    </a>
+    <div class="navigation-pills" aria-label="主要导航">
+      <button type="button" data-route-button="cover">项目封面</button>
+      <button type="button" data-open-about>关于项目</button>
+      <button type="button" data-route-button="archive">人物档案</button>
+      <button type="button" data-route-button="join">成为讲述者</button>
+    </div>
+    <a class="admin-link" href="#admin" data-route-link="admin">团队后台</a>
+  </header>
+
+  <main>
+    <section class="screen standalone-page" id="screen-cover">
+      <div class="cover-hero standalone-cover">
+        <div class="cover-content">
+          <p class="eyebrow">MARKET LIFE ARCHIVE / 城市人物档案</p>
+          <h1 class="cover-title">
+            烟火留声
+            <span>：篆新摊主生活实录数字档案</span>
+          </h1>
+          <p class="cover-lead">把一件小事做上许多年，日子也会长出值得被听见的大故事。</p>
+          <p class="cover-description">
+            从摊主手上的手艺出发，记录摊前的生活、真实讲述与 AI 情景再现。项目当前为中期样片验证阶段。
+          </p>
+          <div class="cover-motif" aria-hidden="true">
+            <svg viewBox="0 0 620 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 50h129c-8 11-23 14-38 14H58C43 64 29 61 21 50Z" stroke="currentColor"/>
+              <path d="M38 50c13-7 28-9 46-9 18 0 34 2 47 9M49 32c-7-8 6-12 0-20M76 32c-7-8 6-12 0-20M103 32c-7-8 6-12 0-20" stroke="currentColor" stroke-linecap="round"/>
+              <path d="M185 9c13 0 23 8 23 18v5h34v6h-35l-5 27h-51l-5-27h-35v-6h35v-5c0-10 10-18 23-18h16Z" stroke="currentColor"/>
+              <path d="M159 25h75M189 15c-2 5-3 9-3 14M212 15c2 5 3 9 3 14" stroke="currentColor" stroke-linecap="round"/>
+              <path d="M379 51c22 0 42-7 57-20M389 44c15 0 30-5 41-15M464 12v41M453 22h22" stroke="currentColor" stroke-linecap="round"/>
+              <circle cx="535" cy="29" r="22" stroke="currentColor"/>
+              <path d="M523 29c6-9 18-9 24 0M523 29c6 9 18 9 24 0M535 7v44" stroke="currentColor"/>
+              <path d="M576 51c1-16 7-29 18-39M590 16c4-2 8-1 11 2-3 5-7 7-12 6M578 32c-4-4-8-4-12-2 1 5 5 8 10 9" stroke="currentColor" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="cover-quicklinks" aria-label="封面快捷入口">
+            <button class="cover-quicklink" type="button" data-open-about>
+              <small>01 / ABOUT</small>
+              <strong>关于项目</strong>
+              <span>了解我们为什么记录摊主</span>
+            </button>
+            <button class="cover-quicklink" type="button" data-route-button="archive">
+              <small>02 / ARCHIVE</small>
+              <strong>查看人物档案</strong>
+              <span>悬停人物卡片，查看简介与照片</span>
+            </button>
+            <button class="cover-quicklink" type="button" data-route-button="join">
+              <small>03 / OPEN CALL</small>
+              <strong>成为讲述者</strong>
+              <span>留下联系方式，参与人物记录</span>
+            </button>
+          </div>
+          <p class="cover-scroll-hint" id="saCoverScrollHint" hidden>当前屏幕较小，可向上滑动查看更多内容 ↓</p>
+          <div class="cover-signature">
+            <span>云南大学工商管理与旅游管理学院</span>
+            <span>“烟火留声”项目组</span>
+          </div>
+        </div>
+        <figure class="market-photo-slot" id="standaloneCoverPhoto">
+          <div class="market-photo-placeholder">
+            <span>篆新市场 · 实拍照片</span>
+            <strong>留 1/3 屏幕<br>给一座市场</strong>
+            <small>登录团队后台后，可在“项目封面照片”中上传。</small>
+          </div>
+          <figcaption>昆明 · 篆新市场</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="screen standalone-page" id="screen-archive" hidden>
+      <div class="container archive-catalog">
+        <header class="catalog-head">
+          <button class="back-link" type="button" data-route-button="cover">← 返回项目封面</button>
+          <p class="eyebrow">PEOPLE ARCHIVE / 人物档案目录</p>
+          <h1>选择一份档案，<br>听见一个摊主。</h1>
+          <p>将鼠标移到档案上查看人物简介和照片摘录；触屏设备直接点击档案进入。</p>
+        </header>
+        <section class="archive-grid" id="standaloneArchiveGrid"></section>
+      </div>
+    </section>
+
+    <section class="screen standalone-page profile-page" id="screen-profile" hidden>
+      <div class="container profile-intro">
+        <div class="profile-intro-copy">
+          <button class="back-link" type="button" data-route-button="archive">← 返回档案目录</button>
+          <p class="eyebrow" id="saProfileNo">001号摊主档案</p>
+          <h1 class="profile-page-name" id="saProfileName">蒸肉西施</h1>
+          <p class="profile-page-role" id="saProfileRole">创生源粉蒸肉第三代传承人</p>
+          <p class="profile-page-bio" id="saProfileBio"></p>
+          <blockquote class="profile-page-quote" id="saProfileQuote"></blockquote>
+          <div class="profile-meta" id="saProfileMeta"></div>
+          <div class="profile-route">
+            <span class="route-pin" aria-hidden="true">导航</span>
+            <div>
+              <small>到访摊位</small>
+              <strong id="saStallLocation">摊位位置待补充</strong>
+            </div>
+            <a id="saNavigationLink" href="#" target="_blank" rel="noreferrer">高德查找摊位 →</a>
+          </div>
+        </div>
+        <section class="portrait-book-section" aria-label="人物照片翻页册">
+          <div class="portrait-book">
+            <div class="book-stage" id="saBookStage" aria-live="polite"></div>
+            <button class="book-arrow book-prev" id="saBookPrev" type="button" aria-label="上一张照片">‹</button>
+            <button class="book-arrow book-next" id="saBookNext" type="button" aria-label="下一张照片">›</button>
+          </div>
+          <div class="book-controls">
+            <span id="saBookCounter">0 / 0</span>
+            <div class="book-dots" id="saBookDots"></div>
+            <span id="saBookCaption">人物肖像</span>
+          </div>
+        </section>
+      </div>
+      <section class="container section-tight" id="saStats"></section>
+      <nav class="chapter-nav">
+        <div class="container chapter-nav-inner">
+          <a href="#sa-craft">01 手上 · 制作</a>
+          <a href="#sa-stall">02 摊前 · 营生</a>
+          <a href="#sa-extras">03 花絮 · 镜头之外</a>
+          <a href="#sa-ai">04 讲述 · AI情景再现</a>
+        </div>
+      </nav>
+      <div class="container">
+        <article class="chapter" id="sa-craft">
+          <div class="chapter-copy">
+            <p class="chapter-kicker">01 / 手上的手艺</p>
+            <h2 class="chapter-title">凌晨三点，<br>味道已经开始。</h2>
+            <p id="saCraftText"></p>
+          </div>
+          <div class="chapter-media" id="saCraftMedia"></div>
+        </article>
+        <article class="chapter" id="sa-stall">
+          <div class="chapter-copy">
+            <p class="chapter-kicker">02 / 摊前的生活</p>
+            <h2 class="chapter-title">脸是招牌，<br>也是信任。</h2>
+            <p id="saStallText"></p>
+          </div>
+          <div class="chapter-media" id="saStallMedia"></div>
+        </article>
+        <article class="chapter" id="sa-extras">
+          <div class="chapter-copy">
+            <p class="chapter-kicker">03 / 花絮 · 镜头之外</p>
+            <h2 class="chapter-title">那些没被写进主线，<br>却真实发生的片刻。</h2>
+            <p id="saExtrasText"></p>
+          </div>
+          <div class="chapter-media" id="saExtrasMedia"></div>
+        </article>
+      </div>
+      <section class="section section-dark ai-band" id="sa-ai">
+        <div class="container ai-layout">
+          <div class="ai-copy">
+            <p class="eyebrow">04 / DOUBLE ARCHIVE / 数字叙事</p>
+            <h2 class="ai-title">真实访谈原声<br>× AI情景再现</h2>
+            <p id="saAiText"></p>
+            <p class="ai-note">AI画面属于情景再现，并非现场历史影像。人物声音来自本人访谈原声。</p>
+          </div>
+          <div class="chapter-media ai-media" id="saAiMedia"></div>
+        </div>
+      </section>
+      <section class="section team-credit-section" id="saTeam">
+        <div class="container">
+          <div class="team-credit-head">
+            <span class="section-number">05 / CREDITS</span>
+            <h2>这份档案<br>由我们共同完成。</h2>
+            <p>从前期联络、现场拍摄，到人物整理、AI情景再现和网站制作，记录不是一个人的工作。团队成员与具体分工可在后台持续补充。</p>
+          </div>
+          <div class="team-credit-grid" id="saTeamGrid"></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="screen" id="screen-join" hidden>
+      <div class="join-simple">
+        <div class="join-simple-card">
+          <p class="eyebrow">OPEN CALL / 摊主征集</p>
+          <h1>成为下一位讲述者</h1>
+          <p>留下联系方式，团队会通过微信与你沟通拍摄内容、时间和授权范围。</p>
+          <form id="saJoinForm">
+            <div class="form-row">
+              <div class="form-group"><label class="field-label" for="saJoinName">称呼或摊名</label><input class="field" id="saJoinName" required></div>
+              <div class="form-group"><label class="field-label" for="saJoinWechat">微信</label><input class="field" id="saJoinWechat" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label class="field-label" for="saJoinCategory">经营类别</label><input class="field" id="saJoinCategory" required></div>
+              <div class="form-group"><label class="field-label" for="saJoinLocation">摊位大致位置</label><input class="field" id="saJoinLocation" required></div>
+            </div>
+            <div class="form-group"><label class="field-label" for="saJoinStory">想讲述的内容</label><textarea class="textarea" id="saJoinStory"></textarea></div>
+            <label class="checkbox-row"><input type="checkbox" id="saJoinConsent" required><span>同意团队通过微信联系，仅用于拍摄沟通和内容确认。</span></label>
+            <p class="error-text" id="saJoinMessage"></p>
+            <button class="button button-primary" type="submit">提交报名</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-admin" hidden>
+      <div class="admin-page-shell">
+        <section class="admin-login" id="saAdminLogin">
+          <div class="admin-login-card">
+            <a class="brand" href="#cover" data-route-link="cover"><span class="brand-mark">留声</span><span class="brand-word">团队后台</span></a>
+            <h1>登录管理系统</h1>
+            <p>请输入团队管理员账号密码。</p>
+            <form class="admin-login-form" id="saLoginForm">
+              <div class="form-group"><label class="field-label" for="saAdminUser">管理员账号</label><input class="field" id="saAdminUser" autocomplete="username" required></div>
+              <div class="form-group"><label class="field-label" for="saAdminPassword">密码</label><input class="field" id="saAdminPassword" type="password" autocomplete="current-password" required></div>
+              <p class="error-text" id="saLoginError"></p>
+              <button class="button button-primary button-block" type="submit">登录</button>
+            </form>
+          </div>
+        </section>
+        <div class="admin-shell" id="saAdminPanel" hidden>
+          <aside class="admin-sidebar">
+            <a class="brand" href="#cover" data-route-link="cover"><span class="brand-mark">留声</span><span class="brand-word">烟火留声</span></a>
+            <div class="admin-user">新版本地素材管理</div>
+            <nav class="admin-nav">
+              <button class="is-active" type="button" data-admin-tab="profile">人物资料</button>
+              <button type="button" data-admin-tab="media">影像素材</button>
+              <button type="button" data-admin-tab="applications">摊主报名</button>
+            </nav>
+            <div class="admin-sidebar-footer"><a href="#cover" data-route-link="cover">打开项目网站</a><button type="button" id="saLogout">退出登录</button></div>
+          </aside>
+          <main class="admin-main">
+            <header class="admin-topbar"><div><h1>团队内容管理</h1><div class="muted">修改保存在当前浏览器中</div></div></header>
+            <section class="screen" id="saAdminProfileTab">
+              <div class="admin-section">
+                <h2>人物资料</h2>
+                <p class="section-help">这些文字会直接显示在档案目录和人物页。</p>
+                <form class="admin-form" id="saProfileForm">
+                  <div class="admin-form-grid three"><div class="form-group"><label class="field-label">档案编号</label><input class="field" id="saAdminNumber" required></div><div class="form-group"><label class="field-label">公开称呼</label><input class="field" id="saAdminPublicName" required></div><div class="form-group"><label class="field-label">人物身份</label><input class="field" id="saAdminRole"></div></div>
+                  <div class="admin-form-grid"><div class="form-group"><label class="field-label">摊名</label><input class="field" id="saAdminStall"></div><div class="form-group"><label class="field-label">经营类别</label><input class="field" id="saAdminCategory"></div></div>
+                  <div class="admin-form-grid"><div class="form-group"><label class="field-label">摊位号或具体位置</label><input class="field" id="saAdminStallNumber" placeholder="例如：熟食区某号或市场某通道"></div><div class="form-group"><label class="field-label">高德地图摊位导航链接</label><input class="field" id="saAdminNavigation" type="url" placeholder="粘贴高德分享链接"></div></div>
+                  <div class="form-group"><label class="field-label">一句话简介</label><textarea id="saAdminBio"></textarea></div>
+                  <div class="form-group"><label class="field-label">首页原话</label><textarea id="saAdminQuote"></textarea></div>
+                  <div class="form-group"><label class="field-label">手上 · 制作章节文字</label><textarea id="saAdminCraft"></textarea></div>
+                  <div class="form-group"><label class="field-label">摊前 · 营生章节文字</label><textarea id="saAdminStallText"></textarea></div>
+                  <div class="form-group"><label class="field-label">花絮 · 镜头之外文字</label><textarea id="saAdminExtras"></textarea></div>
+                  <div class="form-group"><label class="field-label">讲述 · AI情景再现文字</label><textarea id="saAdminAi"></textarea></div>
+                  <div class="form-group"><label class="field-label">人员分工详情</label><textarea id="saAdminTeam" placeholder="每行一项：角色｜姓名｜具体工作"></textarea><p class="field-help">例如：现场拍摄｜张三｜负责访谈与制作过程拍摄。</p></div>
+                  <div class="admin-actions"><button class="button button-primary" type="submit">保存人物资料</button><span class="admin-message" id="saProfileMessage"></span></div>
+                </form>
+              </div>
+            </section>
+            <section class="screen" id="saAdminMediaTab" hidden>
+              <div class="admin-section">
+                <h2>项目封面照片</h2>
+                <p class="section-help">默认展示区约占屏幕宽度 1/3，可在下方自行调整宽度、高度和图片缩放；多张照片自动或手动切换。</p>
+                <div class="site-cover-editor">
+                  <div class="site-cover-preview" id="saAdminCoverPreview">尚未上传项目封面</div>
+                  <form class="site-cover-form" id="saCoverForm"><div class="form-group"><label class="field-label">选择市场现场照片，可多选</label><input class="field" id="saCoverFile" type="file" accept="image/*" multiple required><p class="field-help">上传的新组照片会替换当前封面；第一张作为主图，可自动或手动切换其他照片。</p></div><div class="form-group"><label class="field-label">封面说明</label><input class="field" id="saCoverTitle" value="昆明 · 篆新市场"></div><button class="button button-primary" type="submit">上传并替换封面</button><p class="admin-message" id="saCoverMessage"></p></form>
+                </div>
+                <form class="admin-form" id="saCoverSizeForm">
+                  <div>
+                    <h3>调整封面图片大小</h3>
+                    <p class="section-help">只调整封面区域和主图大小，不影响网站其他页面。修改后保存即可。</p>
+                  </div>
+                  <div class="cover-size-grid">
+                    <label class="cover-size-control">
+                      <span class="field-label">图片区域宽度 <output id="saCoverAreaOutput">33.3%</output></span>
+                      <input id="saCoverAreaWidth" type="range" min="20" max="45" step="0.1" value="33.3">
+                      <span class="field-help">占整个网页宽度的比例。</span>
+                    </label>
+                    <label class="cover-size-control">
+                      <span class="field-label">图片高度 <output id="saCoverHeightOutput">100%</output></span>
+                      <input id="saCoverHeight" type="range" min="50" max="100" step="1" value="100">
+                      <span class="field-help">占封面可用高度的比例。</span>
+                    </label>
+                    <label class="cover-size-control">
+                      <span class="field-label">图片缩放 <output id="saCoverScaleOutput">100%</output></span>
+                      <input id="saCoverScale" type="range" min="70" max="160" step="1" value="100">
+                      <span class="field-help">原图内部空白较多时可继续放大。</span>
+                    </label>
+                  </div>
+                  <div class="admin-form-grid">
+                    <div class="form-group">
+                      <label class="field-label" for="saCoverFit">图片显示方式</label>
+                      <select class="select" id="saCoverFit">
+                        <option value="cover">铺满图片区域，超出部分裁切</option>
+                        <option value="contain">完整显示原图，可能出现留白</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="admin-actions">
+                    <button class="button button-primary" type="submit">保存封面尺寸</button>
+                    <button class="button button-secondary" type="button" id="saCoverReset">恢复默认</button>
+                    <span class="admin-message" id="saCoverSizeMessage"></span>
+                  </div>
+                </form>
+                <div class="admin-media-grid" id="saCoverAdminList"></div>
+              </div>
+              <div class="admin-section">
+                <h2>照片上传</h2>
+                <p class="section-help">人物肖像会进入翻页册；制作、摊前和花絮照片会进入对应章节。</p>
+                <form class="upload-form upload-form-photo" id="saPhotoForm">
+                  <div class="form-group"><label class="field-label">选择照片，可多选</label><input class="field" id="saPhotoFiles" type="file" accept="image/*" multiple required></div>
+                  <div class="form-group"><label class="field-label">照片板块</label><select class="select" id="saPhotoChapter"><option value="portrait">人物肖像 · 翻页册</option><option value="craft">手上 · 制作</option><option value="stall">摊前 · 营业</option><option value="story">花絮 · 镜头之外</option></select></div>
+                  <div class="form-group"><label class="field-label">标题前缀</label><input class="field" id="saPhotoTitle" placeholder="例如：人物肖像"></div>
+                  <div class="form-group"><label class="field-label">照片说明</label><input class="field" id="saPhotoCaption" placeholder="拍摄时间或说明"></div>
+                  <label class="checkbox-row compact-check"><input type="checkbox" id="saPhotoCover"><span>将第一张设为人物翻页册封面</span></label>
+                  <button class="button button-dark button-small" type="submit">上传照片</button>
+                </form>
+                <p class="admin-message" id="saPhotoMessage"></p>
+              </div>
+              <div class="admin-section">
+                <h2>视频上传</h2>
+                <p class="section-help">建议使用 MP4（H.264）。上传时会尽量自动截取视频封面；如浏览器不支持该编码，视频可能无法播放。</p>
+                <form class="upload-form upload-form-video" id="saVideoForm">
+                  <div class="form-group"><label class="field-label">选择视频</label><input class="field" id="saVideoFile" type="file" accept="video/*" required></div>
+                  <div class="form-group"><label class="field-label">视频板块</label><select class="select" id="saVideoChapter"><option value="craft">01 手上 · 制作</option><option value="stall">02 摊前 · 营业</option><option value="story">03 花絮 · 镜头之外</option><option value="ai">04 讲述 · AI情景再现</option></select></div>
+                  <div class="form-group"><label class="field-label">视频标题</label><input class="field" id="saVideoTitle" required></div>
+                  <div class="form-group"><label class="field-label">视频说明</label><input class="field" id="saVideoCaption"></div>
+                  <div class="form-group"><label class="field-label">视频封面（可选）</label><input class="field" id="saVideoPoster" type="file" accept="image/*"></div>
+                  <button class="button button-dark button-small" type="submit">上传视频</button>
+                </form>
+                <p class="admin-message" id="saVideoMessage"></p>
+              </div>
+              <div class="admin-section">
+                <h2>照片素材管理</h2>
+                <div class="admin-media-grid" id="saPhotoAdminList"></div>
+              </div>
+              <div class="admin-section">
+                <h2>视频素材管理</h2>
+                <div class="admin-media-grid" id="saVideoAdminList"></div>
+              </div>
+            </section>
+            <section class="screen" id="saAdminApplicationsTab" hidden>
+              <div class="admin-section"><h2>摊主报名</h2><p class="section-help">新版直接打开网站上提交的报名保存在当前浏览器。</p><div class="saved-applications" id="saApplicationList"></div></div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="about-dialog" id="saAboutDialog">
+    <div class="about-dialog-inner">
+      <p class="eyebrow">ABOUT / 关于项目</p>
+      <h2>让市场里的普通人，<br>被长久地听见。</h2>
+      <p>“烟火留声”以昆明篆新市场为拍摄对象，通过人物档案、现场影像和口述声音，记录摊主的劳动、手艺与日常。</p>
+      <p>每个摊位背后，都有一件坚持了许多年的小事。平台的 AI 画面仅用于基于真实讲述的情景再现，并会明确标注。</p>
+      <button class="dialog-close" id="saAboutClose" type="button">关闭说明</button>
+    </div>
+  </dialog>
+  <dialog class="lightbox" id="saLightbox">
+    <img id="saLightboxImage" alt="">
+    <div class="lightbox-bar"><span id="saLightboxCaption"></span><button class="lightbox-close" id="saLightboxClose" type="button">关闭</button></div>
+  </dialog>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
